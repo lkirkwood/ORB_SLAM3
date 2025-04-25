@@ -234,7 +234,7 @@ void LoadImages(const string &strImagePath, const string &strPathTimes,
     if (!s.empty()) {
       stringstream ss;
       ss << s;
-      vstrImages.push_back(strImagePath + "/frame" + ss.str() + ".jpg");
+      vstrImages.push_back(strImagePath + "/frame_" + ss.str() + ".png");
       double t;
       ss >> t;
       vTimeStamps.push_back(t);
