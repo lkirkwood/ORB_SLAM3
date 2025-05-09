@@ -17,9 +17,12 @@ Camera.type: "PinHole"
 
 # Camera calibration and distortion parameters (OpenCV)
 Camera1.fx: 640.0
-Camera1.fy: 640.0
-Camera1.cx: 639.5
-Camera1.cy: 479.5
+Camera1.fy: 480.0
+Camera1.cx: 640.0
+Camera1.cy: 480.0
+
+Camera.height: 960
+Camera.width: 1280
 
 # No distortion in ReplicaRenderer
 Camera1.k1: 0.0
@@ -27,18 +30,11 @@ Camera1.k2: 0.0
 Camera1.p1: 0.0
 Camera1.p2: 0.0
 
-Camera.width: 1280
-Camera.height: 960
-
-Camera.newWidth: 1280
-Camera.newHeight: 960
-
 # Camera frames per second (adjust if necessary)
 Camera.fps: 30
 
 # Color order of the images (0: BGR, 1: RGB)
 Camera.RGB: 1
-
 #--------------------------------------------------------------------------------------------
 # Depth Parameters
 #--------------------------------------------------------------------------------------------
@@ -52,16 +48,16 @@ DepthMapFactor: 6553.5  # Convert depth from uint16 to meters
 # ORB Extractor: Number of features per image
 ORBextractor.nFeatures: 1000
 
-# ORB Extractor: Scale factor between levels in the scale pyramid 	
+# ORB Extractor: Scale factor between levels in the scale pyramid
 ORBextractor.scaleFactor: 1.2
 
-# ORB Extractor: Number of levels in the scale pyramid	
+# ORB Extractor: Number of levels in the scale pyramid
 ORBextractor.nLevels: 8
 
 # ORB Extractor: Fast threshold
 # Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
 # Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
-# You can lower these values if your images have low contrast			
+# You can lower these values if your images have low contrast
 ORBextractor.iniThFAST: 20
 ORBextractor.minThFAST: 7
 
@@ -78,4 +74,3 @@ Viewer.ViewpointX: 0.0
 Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
 Viewer.ViewpointF: 500.0
-
