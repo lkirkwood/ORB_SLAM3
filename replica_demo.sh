@@ -6,6 +6,7 @@ pushd /ORB_SLAM3
     Vocabulary/ORBvoc.txt \
     ./Examples/Monocular/Replica.yml \
     /Datasets/habsim-Replica/ \
-    /Datasets/habsim-Replica/timestamps
+    /Datasets/habsim-Replica/rgb-timestamps \
+    $1
 
 popd
