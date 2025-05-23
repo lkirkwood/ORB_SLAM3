@@ -33,7 +33,7 @@ Stereo.ThDepth: 40.0
 Stereo.b: 0.07732
 
 # Depth map values factor
-RGBD.DepthMapFactor: 0.5
+RGBD.DepthMapFactor: 1.0
 
 #--------------------------------------------------------------------------------------------
 # ORB Parameters
